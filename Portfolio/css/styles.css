@@ -1,0 +1,378 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #0F1A20;
+}
+
+
+
+
+.navigation {
+    background-color: #ADA296;
+    color: #0F1A20;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    animation-name: navegacao;
+    animation-duration: 4s;
+}
+.navigation ul {
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: right;
+}
+.navigation li{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+}
+.navigation li.threeline-icon {
+    display: none;
+}
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+.navigation a:hover{
+    color:brown;
+}
+.navigation li.threeline-icon {
+	display: none;
+}
+
+.navigation li.threeline-icon:hover {
+	color: #f27609;
+	cursor: pointer;
+}
+.navigation li.threeline-icon {
+    display: none;
+}
+
+
+
+
+.profile {
+    color: white;
+}
+.profile div{
+    display: inline-block;
+    height: 650px;
+    vertical-align: top;
+}
+.profile span{
+    color: brown;
+    display: block;
+    margin-left: 10px;
+}
+
+
+
+
+.profile-name{
+    text-transform: uppercase;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+
+    line-height: 58px;
+    margin-top: 150px;
+    vertical-align: top;
+    width: 59%;
+
+    color: white;
+    background-color: #0F1A20;
+    animation-name: profile-capa;
+    animation-duration: 2s;
+}
+.profile-name h1{
+    font-size: 58px;
+    margin-left: 200px;
+}
+.profile-name h2{
+    font-size: 16px;
+    margin-top: -40px;
+    margin-left: 80px;
+}
+
+
+
+
+.profile-pic {
+    width: 40%;
+    text-align: center;
+    margin-top: 100px;
+    animation-name: profile-capa;
+    animation-duration: 2s;
+}
+.profile-pic img {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+}
+
+
+
+
+.main{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 80px 180px 80px 100px;
+    animation-name: conteudo;
+    animation-duration: 2s;
+}
+.main h1{
+    color: white;
+    font-weight: normal;
+}
+.main h2{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.main h3{
+    font-size: 12px;
+    color: brown;
+    text-transform: uppercase;
+}
+.main p{
+    color: white;
+    font-size: 18px;
+    font-weight: 100px;
+    line-height: 24px;
+    text-align: justify;
+}
+.main img {
+    float: left;
+    margin-right: 30px;
+}
+.main .social{
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.main a{
+    color:grey;
+}
+
+
+
+.caminho {
+    list-style: none;
+    padding-left: 0;
+    color: grey;
+    text-decoration: none;
+}
+.caminho li{
+    display: inline-block;
+}
+.caminho a {
+    color: grey;
+}
+
+
+
+
+.miniatura {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+
+
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 120px;
+}
+.blackbox:hover {
+    opacity: 0.8;
+    transition: 2s;
+}
+
+
+
+
+.blackbox-text {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.blackbox-text h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 0;
+}
+.blackbox-text span{
+    color: brown;
+}
+
+.trabalhos {
+    weight: 1000px;
+    height: 1100px;
+    text-size-adjust: 50%;
+    align-items: center;
+}
+
+.trabalhos .foto-trabalhos {
+    float: none;
+    weight: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+@keyframes profile-capa {
+	0% {opacity: 0; transform: translate(0px,20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes titulo-capa {
+	0% {opacity: 0; transform: translate(0px,-20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+} 
+
+@keyframes conteudo {
+	0% {opacity: 0; transform: translate(-20px,0px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+} 
+
+@keyframes navegacao {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1}
+} 
+
+
+
+@media (max-width: 1000px) {
+    .navigation li {
+        display: none;
+    }
+    .navigation li.threeline-icon {
+        display: inline-block;
+    }
+    
+
+    
+
+    .profile div {
+        display: block;
+        height: auto;
+    }
+   
+    
+
+
+    .profile-pic {
+        width: 100%;
+    }   
+    .profile-pic img {
+        max-width: 75%;
+        margin-top: 0;
+        max-width: 80%;
+    }
+
+
+
+
+    .profile-name {
+        text-align: center;
+        width: 100%;
+    }
+    .profile-name h1 {
+        margin-top: 30px;
+        font-size: 36px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }  
+    .profile-name h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+
+
+
+    .main {
+        padding: 10px 5% 40px 5%;
+        overflow-wrap: break-word;
+          word-wrap: break-word;
+    
+    
+    }
+    .main p {
+        text-align: left;
+        line-height: 30px;
+    
+    }
+    .main img {
+        float: none;
+        max-width: 100%;
+        margin-right: 0px;
+    }
+    
+
+
+
+    .caminho li {
+        font-size: 12px;
+    }
+
+
+
+
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+    
+
+
+
+    .blackbox {
+        opacity: 0.8;
+    }
+    
+
+
+
+    .menujs {
+        height: auto;
+    }
+    
+    .menujs ul {
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+    
+    }
+    .menujs li {
+        display: block;
+        border-bottom: solid grey 1px;
+        width: 100%;
+        padding: 0;
+    
+    }
+}
